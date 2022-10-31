@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { github } from '../config';
 import { countries as allCountries } from 'countries-list';
 import { CountryInterface } from '../interfaces';
 
@@ -35,7 +34,6 @@ const CountryList = () => {
             ))}
         </div>
       )}
-      ;
     </div>
   );
 };
