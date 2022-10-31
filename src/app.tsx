@@ -1,15 +1,15 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 
-import Home from "./home";
+import CountryList from './components/CountryList';
 import NotFound from './not-found';
 
-import links from "./links";
+import links from './links';
 
 export default () => {
   return (
     <Routes>
-      <Route path={links.home.link} element={<Home />} />
-      <Route path={"/:any"} element={<NotFound />} />
+      <Route path={links.home.link} element={<CountryList />} />
+      <Route path={'/:any'} element={<NotFound />} />
     </Routes>
   );
 };
