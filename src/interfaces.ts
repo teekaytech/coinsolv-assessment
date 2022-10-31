@@ -4,7 +4,7 @@ interface LanguageInterface {
 
 export interface CountryInterface {
   [key: string]: {
-    capital: string;
+    capital?: string;
     continent: string;
     currency: string;
     emoji: string;

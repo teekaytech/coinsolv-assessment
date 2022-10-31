@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { countries as allCountries } from 'countries-list';
 import { CountryInterface } from '../interfaces';
+import Country from './Country';
 
-const CountryList = () => {
+const CountryList = (): JSX.Element => {
   const [countries, setCountries] = useState<CountryInterface | {}>({
     null: {},
   });
@@ -11,31 +12,31 @@ const CountryList = () => {
     setCountries(allCountries);
   }, []);
 
+  const renderCountries = (): JSX.Element => (
+    <table className='table table-striped table-hover'>
+      <thead>
+        <tr>
+          <th scope='col'>Country Name</th>
+          <th scope='col'>Capital</th>
+          <th scope='col'>Flag</th>
+          <th scope='col'>Wiki Page</th>
+        </tr>
+      </thead>
+      <tbody>
+        {Object.entries(countries).map(([key, country]) => (
+          <tr key={key}>
+            <Country country={country} />
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+
   if (countries === null) {
     return <p>loading...</p>;
   }
 
-  return (
-    <div>
-      {countries && (
-        <div className='row'>
-          {countries &&
-            Object.entries(countries).map(([key, country]) => (
-              <div className='col-12 col-md-6 col-lg-4' key={key}>
-                <div className='card mb-3'>
-                  <div className='card-body'>
-                    <h5 className='card-title'>{country.name}</h5>
-                    <h6 className='card-subtitle mb-2 text-muted'>
-                      {country.capital}
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
-      )}
-    </div>
-  );
+  return <div>{countries && renderCountries()}</div>;
 };
 
 export default CountryList;
