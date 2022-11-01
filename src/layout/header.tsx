@@ -28,9 +28,6 @@ export default () => (
             {menu.name}
           </Link>
         ))}
-        <section className='d-inline-block'>
-          <input placeholder='Search for a country' />
-        </section>
       </nav>
     </div>
   </header>
