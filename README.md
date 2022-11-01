@@ -1,4 +1,4 @@
-# Coinsolv Assesssment (Static Web Page)
+# Coinsolv Assesssment
 
 > I used [Vite](https://github.com/nexys-system/boilerplate_vite/) template and [`countries-list`](https://www.npmjs.com/package/countries-list) package to create a simple table that displays all the countries of the world, with the `name`, `capital`, `display flag`, and `link to wiki page` columns. I also added a basic search functionality to the app.
 
