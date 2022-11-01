@@ -1,12 +1,11 @@
 import React from 'react';
-import { CountryInterface } from '../interfaces';
+import { ICountry } from '../interfaces';
 
-interface Props {
-  country: CountryInterface;
-  index: number;
+interface IProps {
+  country: ICountry;
 }
 
-const Country: React.FC<CountryInterface> = ({ country, index }) => {
+const Country: React.FC<IProps> = ({ country }) => {
   const setWikiLink = (name: string): string => {
     const replaceSpace = name?.replace(/ /g, '_');
     return `https://en.wikipedia.org/wiki/${replaceSpace}`;
