@@ -1,52 +1,79 @@
-# Boilerplate for Vite Project
+# Coinsolv Assesssment (Static Web Page)
 
-[![Test](https://github.com/nexys-system/boilerplate_vite/actions/workflows/test.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/test.yml)
-[![Deploy](https://github.com/nexys-system/boilerplate_vite/actions/workflows/deploy.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/deploy.yml)
-[![Docker](https://github.com/nexys-system/boilerplate_vite/actions/workflows/docker.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/docker.yml)
+> I used [Vite](https://github.com/nexys-system/boilerplate_vite/) template and [`countries-list`](https://www.npmjs.com/package/countries-list) package to create a simple table that displays all the countries of the world, with the `name`, `capital`, `display flag`, and `link to wiki page` columns. I also added a basic search functionality to the app.
 
-This template repo allows you to create a JS app with [Vite](https://vitejs.dev/) in less than a minute with CI and CD - leveraging [Github actions](https://github.com/features/actions).
+## Built with
 
-## Get started
+- Vite React template
+- TypeScript
+- Bootstrap 5
+- Git/GitHub
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/c4c7a88b-ba77-4896-b016-80989a94e7c1/deploy-status)](https://app.netlify.com/sites/coinsolv/deploys)
 
-![get started](./recording.gif)
+## Live demo: [Live Demo Link](https://coinsolv.netlify.app)
 
-Just click on "use this template" to create a github repo of your own.
-Locally:
-* clone
-* `yarn` (to install dependencies)
-* `yarn start` to start a dev server
+## Getting started
 
-### Deployment
+To get a local copy up and running follow these simple example steps.
 
-Deployment is triggered for every new tag/release. [See instructions on how to create a new release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
+- On the project GitHub page, navigate to the main page of the repository [this page](https://github.com/teekaytech/coinsolv-assessment).
+- Under the repository name, locate and click on a green button named `Code`.
+- Copy the project URL as displayed.
+- If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal.
+- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
+- Type `git clone`, and then paste the URL you copied in Step 3.<br>
+  ```
+  $ git clone https://github.com/teekaytech/coinsolv-assessment.git
+  ```
+- Press Enter. Your local copy will be created.
 
-#### Github Pages
+Please Note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
 
-The project is configured to be deployed to github pages automatically. Make sure you have your keypair uploaded, see [instructions](https://github.com/marketplace/actions/deploy-to-github-pages#using-an-ssh-deploy-key-)
+### Prerequisites
 
-#### Docker Container
+- Node
+- NPM / NPX
+- Web Browser
+- Text Editor (VSCode, Notepad++)
 
-A Docker container is generated for every release. Runs on port `3000`. [See the list of generated Docker containers](https://github.com/nexys-system/boilerplate_vite/pkgs/container/boilerplate_vite%2Fboilerplate_vite)
+### Setup Scripts
 
-### Best Practices
+Change working directory to the project's root directory on the terminal, install dependencies with: `yarn install`
 
-When deployed via the docker container, the website gets a perfect score with [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+In the project directory, you can run: `yarn start`
 
-![Lightouse screenshot made on Aug 11 with a docker deployment, v0.0.21](./lightouse-screenshot.png)
+Runs the app in the development mode.
 
-## Included resources
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Bootstrap
+The page will reload when you make edits.
 
-https://getbootstrap.com/docs/5.0/content
+Script `yarn build` builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
 
-### Font-awesome
+## Author
 
-[version 6.1.1](https://cdnjs.com/libraries/font-awesome)
+**Taofeek OLALERE**
 
-Browse available icons: https://fontawesome.com/search
+- [Portfolio](https://taofeekolalere.me)
+- [Github](https://github.com/teekaytech/)
+- [Twitter](https://twitter.com/ola_lere)
+- [LinkedIn](https://www.linkedin.com/in/olaleretaofeek/)
 
+## Contributing
 
-## More
+Contributions, issues and feature requests are welcome!
 
-see [headless](https://github.com/nexys-system/react-headless) to be able to create Admin UI easily
+1.  Fork the Project: https://github.com/teekaytech/coinsolv-assessment
+2.  Open a Pull Request
+
+Feel free to check the [issues page](https://github.com/teekaytech/coinsolv-assessment/issues).
+
+## Show your support
+
+Give a :star: if you like this project!
+
+## Acknowledgements
+
+- [FreeCodeCamp TypeScript Crash Course](https://www.freecodecamp.org/news/learn-typescript-with-this-crash-course/)
+- [Vite Template](https://github.com/nexys-system/boilerplate_vite/)
